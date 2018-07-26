@@ -31,6 +31,7 @@ offer.URLs <- xml2::read_html(URL) %>%
   rvest::html_attr(name = "href")
 
 offer.URL <- offer.URLs[20]
+offer.URL <- "https://www.otomoto.pl/oferta/mercedes-benz-w124-1984-1993-coupe-300ce-ID6AmpFl.html#3471ec01f4"
 
 
 parameters.table <- xml2::read_html(offer.URL) %>%
@@ -70,13 +71,33 @@ equipment
 description <- xml2::read_html(offer.URL) %>%
   rvest::html_nodes(xpath = "//div[@id='description']/div") %>%
   rvest::html_text() %>%
-  gsub(pattern = "\\s{2,}", replacement = "", x = .)
-
-
+  gsub(pattern = "\\n", replacement = "", x = .) %>%
+  gsub(pattern = "\\r", replacement = "", x = .) %>%
+  gsub(pattern = "\\\"", replacement = "'", x = .) %>%
+  gsub(pattern = "^\\s{2,}", replacement = "", x = .) %>%
+  gsub(pattern = "\\s{2,}$", replacement = "", x = .) %>%
+  gsub(pattern = "\\s{2,}", replacement = " ", x = .)
 
 description
 
 
+## Połączenie informacji:
+offer.id
+length(labels)==length(values)
+labels
+values
+equipment
+description
+
+n <- length(labels) + length(equipment) + 2
+n_equipment <- length(equipment)
+
+one.offer <- data.frame(
+  Id = rep(offer.id[2], n),
+  Label = c(labels, equipment, "Opis", "Data.oferty"),
+  Value = c(values, rep(1, n_equipment), description, offer.id[1])
+)
+one.offer
 
 
 

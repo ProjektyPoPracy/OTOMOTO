@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1532621107881.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "1431AF18",
+    "lastKnownWriteTime" : 1532458902,
+    "last_content_update" : 1532621107881,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "E1A91405",
+        "caption" : "one.offer",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=one.offer&cache_key=E1A91405",
+        "displayedObservations" : 126,
+        "environment" : "",
+        "object" : "one.offer",
+        "preview" : 0,
+        "totalObservations" : 126,
+        "variables" : 3
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
