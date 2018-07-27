@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1532721266197.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2291184740",
+    "id" : "29DE07AA",
+    "lastKnownWriteTime" : 1532722132,
+    "last_content_update" : 1532722132123,
+    "path" : "~/Documents/projects/otomoto/scraping_rvest/functions/codes/getOfferPrice.R",
+    "project_path" : "functions/codes/getOfferPrice.R",
+    "properties" : {
+        "cursorPosition" : "0,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

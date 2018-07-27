@@ -26,6 +26,8 @@ pageNumber <- 1
 
 URL <- paste0(URL.core, URL.suffix, pageNumber)
 
+
+
 offer.URLs <- xml2::read_html(URL) %>%
   rvest::html_nodes(xpath = "//div/h2/a[@class='offer-title__link']") %>%
   rvest::html_attr(name = "href")
@@ -33,6 +35,8 @@ offer.URLs <- xml2::read_html(URL) %>%
 offer.URL <- offer.URLs[20]
 offer.URL <- "https://www.otomoto.pl/oferta/mercedes-benz-w124-1984-1993-coupe-300ce-ID6AmpFl.html#3471ec01f4"
 
+p <- xml2::read_html(offer.URL)
+x <- getOfferPrice(p)
 
 parameters.table <- xml2::read_html(offer.URL) %>%
   rvest::html_node(xpath = "//div[@id='parameters']") 
