@@ -1,6 +1,0 @@
-
-
-getParamTable <- function(page)
-{
-  
-}

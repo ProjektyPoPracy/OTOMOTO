@@ -1,0 +1,18 @@
+
+checkCorrectnessOfOfferPrice <- function(offerPrice)
+{
+  
+  if(!is.vector(offerPrice) || length(offerPrice) < 3 || !is.character(offerPrice))
+  {
+    stop("Offer price object is not a character vector of minimum length 3. The object looks like:\n", offerPrice)
+  }
+  
+  numericPrice <- as.numeric(offerPrice[1])
+  if(is.na(numericPrice))
+  {
+    stop("Offer price is non-numeric type. The price looks like:\n", offerPrice[1])
+  }
+  
+  return(invisible())
+  
+}

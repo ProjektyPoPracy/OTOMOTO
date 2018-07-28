@@ -37,16 +37,16 @@ offer.URL <- "https://www.otomoto.pl/oferta/mercedes-benz-w124-1984-1993-coupe-3
 
 p <- xml2::read_html(offer.URL)
 x <- getOfferPrice(p)
-
-parameters.table <- xml2::read_html(offer.URL) %>%
-  rvest::html_node(xpath = "//div[@id='parameters']") 
-
+x
 
 offer.id <- xml2::read_html(offer.URL) %>%
   rvest::html_nodes(xpath = "//div[@class='offer-content__metabar']/div[@class='offer-meta']/span[@class='offer-meta__item']/span[@class='offer-meta__value']") %>%
   rvest::html_text()
 offer.id
 
+
+parameters.table <- xml2::read_html(offer.URL) %>%
+  rvest::html_node(xpath = "//div[@id='parameters']") 
 
 
 labels <- parameters.table %>%
@@ -77,6 +77,7 @@ description <- xml2::read_html(offer.URL) %>%
   rvest::html_text() %>%
   gsub(pattern = "\\n", replacement = "", x = .) %>%
   gsub(pattern = "\\r", replacement = "", x = .) %>%
+  gsub(pattern = "\\t", replacement = "", x = .) %>%
   gsub(pattern = "\\\"", replacement = "'", x = .) %>%
   gsub(pattern = "^\\s{2,}", replacement = "", x = .) %>%
   gsub(pattern = "\\s{2,}$", replacement = "", x = .) %>%
@@ -85,21 +86,41 @@ description <- xml2::read_html(offer.URL) %>%
 description
 
 
+## lokalizacja
+
+l <- p %>%
+  rvest::html_node(xpath = "//div[@class='offer-content__aside']/div[@class='seller-box']/div[@class='seller-box__seller-address']/span[@class='seller-box__seller-address__label']") %>%
+  rvest::html_text() %>%
+  gsub(pattern = "\\s{2,}", replacement = "", x = .)
+l
+
+## forma prawna sprzedawcy
+vendor <- p %>%
+  rvest::html_node(xpath = "//div[@class='offer-content__aside']/div[@class='seller-box']/div[@class='seller-box__seller-info']/small[@class='seller-box__seller-type']") %>%
+  rvest::html_text() %>%
+  gsub(pattern = "\\s{2,}", replacement = "", x = .)
+vendor
+
+
+
 ## Połączenie informacji:
 offer.id
 length(labels)==length(values)
+x
+l
+vendor
 labels
 values
 equipment
 description
 
-n <- length(labels) + length(equipment) + 2
+n <- length(labels) + length(equipment) + length(c(description, offer.id[1], vendor, l, x))
 n_equipment <- length(equipment)
 
 one.offer <- data.frame(
   Id = rep(offer.id[2], n),
-  Label = c(labels, equipment, "Opis", "Data.oferty"),
-  Value = c(values, rep(1, n_equipment), description, offer.id[1])
+  Label = c(labels, equipment, "Opis", "Data.oferty", "Sprzedawca", "Lokalizacja", names(x)),
+  Value = c(values, rep(1, n_equipment), description, offer.id[1], vendor, l, x)
 )
 one.offer
 

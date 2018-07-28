@@ -19,7 +19,7 @@ getOfferPrice <- function(page)
     unname()
   
   
-  offerPriceAll <- c(Value = offerPriceNumber, Currency = offerPriceCurrency, Details = offerPriceDetails)
+  offerPriceAll <- c(Cena = offerPriceNumber, Waluta = offerPriceCurrency, CenaDodInfo = offerPriceDetails)
   
   return(offerPriceAll)
   

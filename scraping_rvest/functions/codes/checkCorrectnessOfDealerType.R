@@ -1,0 +1,12 @@
+
+checkCorrectnessOfDealerType <- function(dealerType)
+{
+  
+  if(!is.vector(dealerType) || length(dealerType) != 1 || !is.character(dealerType))
+  {
+    stop("Offer dealerType is not a character vector of length 1. The object looks like:\n", dealerType)
+  }
+  
+  return(invisible())
+  
+}
