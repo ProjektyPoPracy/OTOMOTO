@@ -9,4 +9,6 @@ url <- offer.URLs[runif(1, min = 1, max = 30)]
 so <- getSingleOffer(URL = url, sleep = 0)
 
 
+x <- getOffersInfo()
+
 

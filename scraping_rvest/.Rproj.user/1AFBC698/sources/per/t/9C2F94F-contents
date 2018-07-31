@@ -2,7 +2,7 @@
 getSingleOffer <- function(URL, sleep = 10L)
 {
   
-  cat("Read offer from web adress:", URL)
+  cat("Read offer from web adress:", URL, "\n")
   
   offerPage <- goToPage(URL = URL)
   

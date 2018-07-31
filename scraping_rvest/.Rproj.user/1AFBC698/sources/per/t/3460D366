@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1533060042071.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2166981767",
+    "id" : "3460D366",
+    "lastKnownWriteTime" : 1533061060,
+    "last_content_update" : 1533061060847,
+    "path" : "~/Documents/projects/otomoto/scraping_rvest/functions/codes/defineInitialDataFrameWithOfferInfo.R",
+    "project_path" : "functions/codes/defineInitialDataFrameWithOfferInfo.R",
+    "properties" : {
+        "cursorPosition" : "11,24",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

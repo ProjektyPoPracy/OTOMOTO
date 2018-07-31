@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1533060468946.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2317827240",
+    "id" : "6A6E2FF3",
+    "lastKnownWriteTime" : 1533060905,
+    "last_content_update" : 1533060905881,
+    "path" : "~/Documents/projects/otomoto/scraping_rvest/functions/codes/yesOrNoQuestion.R",
+    "project_path" : "functions/codes/yesOrNoQuestion.R",
+    "properties" : {
+        "cursorPosition" : "15,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
