@@ -1,7 +1,7 @@
 
-getOfferTags <- function(URL)
+getOfferTags <- function(page)
 {
-  offers <- xml2::read_html(URL) %>%
+  offers <- page %>%
     rvest::html_nodes(xpath = "//div/h2/a[@class='offer-title__link']")
   
   return(offers)

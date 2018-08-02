@@ -10,28 +10,28 @@ getOffersInfo <- function(offer.type = "a", startPageNr = 1, stopPageNr = NULL, 
   loadPackages(pckgs = c("tidyverse", "xml2"))
   options(stringsAsFactors = FALSE)
   
-  df <- defineInitialDataFrameWithOfferInfo(init.df = init.df)
+  offersInfoOutput <- defineInitialDataFrameWithOfferInfo(init.df = init.df)
   
   url.core <- defineURLcore(offerType = offer.type)
   URL.suffix <- "?page="
-  pageNumber <- 1
+  pageNumber <- startPageNr
   boardURL <- paste0(url.core, URL.suffix, pageNumber)
   
-  offersTags <- getOfferTags(URL = boardURL)
+  boardPage <- goToPage(URL = boardURL)
+  numberOfPagesToScraping <- defineNumberOfPagesToScraping(board.page = boardPage, last.page = stopPageNr)
   
-  offerIds <- getOfferIdsFromBoard(tags=offersTags)
-  offerURLs <- getOfferURLsFromBoard(tags=offersTags)
-  
-  ifUniqueOffer <- checkIfUniqueOffer(newIds = offerIds, alreadyScrapedIds = df$Id)
-  newOfferURLs <- offerURLs[ifUniqueOffer]
-  
-  for(url in newOfferURLs)
+  ## ----------------------------------------------------------
+  for(pageNumber in startPageNr:numberOfPagesToScraping)
   {
-    singleOfferValues <- getSingleOffer(URL = url, sleep = sleep)
-    df <- rbind(df, singleOfferValues)
+    boardURL <- paste0(url.core, URL.suffix, pageNumber)
+    boardPage <- goToPage(URL = boardURL)
+    newOffers <- getOffersInfoFromSingleBoard(page = boardPage, offersTable = offersInfoOutput, sleep = sleep)  
+    offersInfoOutput <- rbind(offersInfoOutput, newOffers)
+    assign(x = output.name, value = offersInfoOutput, envir = globalenv())
   }
+  ## ----------------------------------------------------------
   
-  return(df)
+  return(offersInfoOutput)
   
 }
 

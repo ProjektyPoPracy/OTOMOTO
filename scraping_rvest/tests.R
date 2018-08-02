@@ -9,6 +9,19 @@ url <- offer.URLs[runif(1, min = 1, max = 30)]
 so <- getSingleOffer(URL = url, sleep = 0)
 
 
-x <- getOffersInfo()
+z <- getOffersInfo(init.df = y,
+  stopPageNr = 2, sleep = 5)
 
+sum(duplicated(x))
+table(x$Id)
+length(table(x$Id))
+table(y$Id)
+length(table(y$Id))
+length(table(y$Id)[ names(table(y$Id)) %in% names(table(x$Id)) ])
+table(z$Id)
+length(table(z$Id))
+length(table(z$Id)[ names(table(z$Id)) %in% names(table(x$Id)) ])
+length(table(z$Id)[ names(table(z$Id)) %in% names(table(y$Id)) ])
+
+defineMaxPageNumber(board.page = offer.URLs, last.page = NULL)
 
