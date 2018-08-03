@@ -1,8 +1,9 @@
 
-getNewOfferURLs <- function(page, offersTable)
+filterNewOfferURLs <- function(page, offersTable, timeout)
 {
+  options(timeout = timeout)
   
-  offersTags <- getOfferTags(page = page)
+  offersTags <- getOfferTags(page = page, timeout = timeout)
   offerIds <- getOfferIdsFromBoard(tags=offersTags)
   offerURLs <- getOfferURLsFromBoard(tags=offersTags)
   

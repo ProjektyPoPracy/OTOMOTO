@@ -9,8 +9,8 @@ url <- offer.URLs[runif(1, min = 1, max = 30)]
 so <- getSingleOffer(URL = url, sleep = 0)
 
 
-z <- getOffersInfo(init.df = y,
-  stopPageNr = 2, sleep = 5)
+y <- getOffersInfo(init.df = x,
+  stopPageNr = 1, sleep = 5)
 
 sum(duplicated(x))
 table(x$Id)

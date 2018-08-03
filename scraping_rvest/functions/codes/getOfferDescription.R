@@ -1,6 +1,7 @@
 
-getOfferDescription <- function(page)
+getOfferDescription <- function(page, timeout)
 {
+  options(timeout = timeout)
   
   description <- page %>%
     rvest::html_nodes(xpath = "//div[@id='description']/div") %>%

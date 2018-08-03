@@ -1,20 +1,22 @@
 
-getSingleOffer <- function(URL, sleep = 10L)
+getSingleOffer <- function(URL, sleep = 10L, timeout)
 {
+  
+  options(stringsAsFactors = FALSE, timeout = timeout)
   
   cat("Read offer from web adress:", URL, "\n")
   
-  offerPage <- goToPage(URL = URL)
+  offerPage <- goToPage(URL = URL, timeout = timeout)
   
-  offerId <-              getOfferId(page = offerPage)
-  offerPrice <-           getOfferPrice(page = offerPage)
-  dealerType <-           getDealerType(page = offerPage)
-  dealerLocation <-       getDealerLoacation(page = offerPage)
-  offerParametersTable <- getOfferParamTable(page = offerPage)
-  offerParameterLabels <- getOfferParamLabels(paramElement = offerParametersTable)
-  offerParameterValues <- getOfferParamValues(paramElement = offerParametersTable)
-  offerEquipment <-       getOfferEquipmentLabels(page = offerPage)
-  offerDescription <-     getOfferDescription(page = offerPage)
+  offerId <-              getOfferId(page = offerPage, timeout = timeout)
+  offerPrice <-           getOfferPrice(page = offerPage, timeout = timeout)
+  dealerType <-           getDealerType(page = offerPage, timeout = timeout)
+  dealerLocation <-       getDealerLoacation(page = offerPage, timeout = timeout)
+  offerParametersTable <- getOfferParamTable(page = offerPage, timeout = timeout)
+  offerParameterLabels <- getOfferParamLabels(paramElement = offerParametersTable, timeout = timeout)
+  offerParameterValues <- getOfferParamValues(paramElement = offerParametersTable, timeout = timeout)
+  offerEquipment <-       getOfferEquipmentLabels(page = offerPage, timeout = timeout)
+  offerDescription <-     getOfferDescription(page = offerPage, timeout = timeout)
   
   checkCorrectnessOfOfferValues(offerId = offerId,
                                 offerPrice = offerPrice,
