@@ -18,7 +18,7 @@ getSingleOffer <- function(URL, sleep = 10L, timeout)
   offerEquipment <-       getOfferEquipmentLabels(page = offerPage, timeout = timeout)
   offerDescription <-     getOfferDescription(page = offerPage, timeout = timeout)
   
-  checkCorrectnessOfOfferValues(offerId = offerId,
+  ifAllValuesAreCorrect <- checkCorrectnessOfOfferValues(offerId = offerId,
                                 offerPrice = offerPrice,
                                 dealerType = dealerType,
                                 dealerLocation = dealerLocation,
@@ -27,14 +27,18 @@ getSingleOffer <- function(URL, sleep = 10L, timeout)
                                 equipmentLabels = offerEquipment, 
                                 description = offerDescription)
   
-  tableWithOfferValues <- mergeOfferValues(offerId = offerId,
-                                           offerPrice = offerPrice,
-                                           dealerType = dealerType,
-                                           dealerLocation = dealerLocation,
-                                           paramLabels = offerParameterLabels, 
-                                           paramValues = offerParameterValues, 
-                                           equipmentLabels = offerEquipment, 
-                                           description = offerDescription)
+  tableWithOfferValues <- NULL
+  if(ifAllValuesAreCorrect)
+  {
+    tableWithOfferValues <- mergeOfferValues(offerId = offerId,
+                                             offerPrice = offerPrice,
+                                             dealerType = dealerType,
+                                             dealerLocation = dealerLocation,
+                                             paramLabels = offerParameterLabels, 
+                                             paramValues = offerParameterValues, 
+                                             equipmentLabels = offerEquipment, 
+                                             description = offerDescription)
+  }
   
   Sys.sleep(sleep)
   

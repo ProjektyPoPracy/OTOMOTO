@@ -22,7 +22,7 @@ getOffersInfo <- function(offer.type = "a", startPageNr = 1, stopPageNr = 10, in
   
   boardPage <- goToPage(URL = boardURL, timeout = timeout); Sys.sleep(sleep)
   numberOfPagesToScraping <- defineNumberOfPagesToScraping(board.page = boardPage, last.page = stopPageNr, timeout = timeout)
-  
+  print(numberOfPagesToScraping)
   ## ----------------------------------------------------------
   for( pageNumber in startPageNr:numberOfPagesToScraping )
   {
