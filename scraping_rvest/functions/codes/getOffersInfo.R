@@ -10,22 +10,27 @@ getOffersInfo <- function(offer.type = "a", startPageNr = 1, stopPageNr = 10, in
   loadPackages(pckgs = c("tidyverse", "xml2"))
   options(stringsAsFactors = FALSE, timeout = timeout)
   
-  offersInfoOutput <- defineInitialDataFrameWithOfferInfo(init.df = init.df)
+  offersInfoOutput <- defineInitialDataFrameWithOfferInfo(initDF = init.df)
+  checkInputAndOutputDependencies(init.df = init.df, output.df = output.name)
+  
+  # assign(x = "metaData", value = list(pageNumber = startPageNr, ifFirstRun = FALSE), envir = globalenv())
   
   url.core <- defineURLcore(offerType = offer.type)
   URL.suffix <- "?page="
   pageNumber <- startPageNr
   boardURL <- paste0(url.core, URL.suffix, pageNumber)
   
-  boardPage <- goToPage(URL = boardURL, timeout = timeout)
+  boardPage <- goToPage(URL = boardURL, timeout = timeout); Sys.sleep(sleep)
   numberOfPagesToScraping <- defineNumberOfPagesToScraping(board.page = boardPage, last.page = stopPageNr, timeout = timeout)
   
   ## ----------------------------------------------------------
   for( pageNumber in startPageNr:numberOfPagesToScraping )
   {
+    cat(paste0("Start to read board no. ", pageNumber, ":\n"))
+    assign(x = "metaData", value = list(pageNumber = pageNumber, ifFirstRun = FALSE), envir = globalenv())
     boardURL <- paste0(url.core, URL.suffix, pageNumber)
-    boardPage <- goToPage(URL = boardURL, timeout = timeout)
-    newOffers <- getOffersInfoFromSingleBoard(page = boardPage, offersTable = offersInfoOutput, sleep = sleep, timeout = timeout)  
+    boardPage <- goToPage(URL = boardURL, timeout = timeout); Sys.sleep(sleep)
+    newOffers <- getOffersInfoFromSingleBoard(page = boardPage, offersTable = offersInfoOutput, sleep = sleep, timeout = timeout) 
     offersInfoOutput <- rbind(offersInfoOutput, newOffers)
     assign(x = output.name, value = offersInfoOutput, envir = globalenv())
   }
