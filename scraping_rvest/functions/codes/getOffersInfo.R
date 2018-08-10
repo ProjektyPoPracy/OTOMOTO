@@ -22,12 +22,16 @@ getOffersInfo <- function(offer.type = "a", startPageNr = 1, stopPageNr = 10, in
   
   boardPage <- goToPage(URL = boardURL, timeout = timeout); Sys.sleep(sleep)
   numberOfPagesToScraping <- defineNumberOfPagesToScraping(board.page = boardPage, last.page = stopPageNr, timeout = timeout)
-  print(numberOfPagesToScraping)
+  
   ## ----------------------------------------------------------
   for( pageNumber in startPageNr:numberOfPagesToScraping )
   {
     cat(paste0("Start to read board no. ", pageNumber, ":\n"))
-    assign(x = "metaData", value = list(pageNumber = pageNumber, ifFirstRun = FALSE), envir = globalenv())
+    assign(x = "metaData", 
+           value = list(pageNumber = pageNumber, 
+                        ifFirstRun = FALSE, 
+                        ifStopFunction = get(x = "metaData", envir = globalenv())$ifStopFunction),
+           envir = globalenv())
     boardURL <- paste0(url.core, URL.suffix, pageNumber)
     boardPage <- goToPage(URL = boardURL, timeout = timeout); Sys.sleep(sleep)
     newOffers <- getOffersInfoFromSingleBoard(page = boardPage, offersTable = offersInfoOutput, sleep = sleep, timeout = timeout) 
@@ -36,7 +40,9 @@ getOffersInfo <- function(offer.type = "a", startPageNr = 1, stopPageNr = 10, in
   }
   ## ----------------------------------------------------------
   
-  return(offersInfoOutput)
+  checkingIfTerminateFunction(currentPageNr = pageNumber, lastPageNr = numberOfPagesToScraping)
+  
+  return(message("Done"))
   
 }
 

@@ -1,10 +1,27 @@
 
+version
+# platform       x86_64-pc-linux-gnu
+# arch           x86_64
+# os             linux-gnu
+# system         x86_64, linux-gnu
+# status
+# major          3
+# minor          4.4
+# year           2018
+# month          03
+# day            15
+# svn rev        74408
+# language       R
+# version.string R version 3.4.4 (2018-03-15)
+# nickname       Someone to Lean On
+
 funList <- list.files("./functions/codes/")
 for(f in funList)
 {
   source(file = paste0("./functions/codes/", f))
 }; rm(f, funList)
 
+# load("data/offers.RData")
 
 getOffersInfo(
   offer.type = "u", ## Possible values: "a" - all; "n" - new; "u" - used
@@ -17,7 +34,5 @@ getOffersInfo(
 )
 nrow(offers)
 length(unique(offers$Id))
-# [1] 8297
-# [1] 122
 
 ## save(offers, file = "./data/offers.RData")

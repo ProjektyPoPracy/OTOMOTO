@@ -5,9 +5,14 @@ getOffersInfo_avoidErr <- function(offer.type = "a", startPageNr = 1, stopPageNr
 {
   
   ## Assign values for first loop requirement
-  assign(x = "metaData", value = list(pageNumber = startPageNr, ifFirstRun = TRUE), envir = globalenv())
+  assign(x = "metaData", 
+         value = list(pageNumber = startPageNr, 
+                      ifFirstRun = TRUE, 
+                      ifStopFunction = FALSE), 
+         envir = globalenv())
+  i <- 1
   
-  for(i in seq_len(n_iter))
+  while( !get(x = "metaData", envir = globalenv())$ifStopFunction )
   {
     tryCatch(
       expr = {
@@ -24,6 +29,8 @@ getOffersInfo_avoidErr <- function(offer.type = "a", startPageNr = 1, stopPageNr
     error = function(e)
     {
       message(paste0("The ",i ,". error has occured. ", e))
+      checkingIfLastIteration(currentIter = i, maxIteration = n_iter)
+      i <- i+1
     }
     )
   }

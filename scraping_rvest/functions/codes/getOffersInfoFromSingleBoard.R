@@ -5,8 +5,9 @@ getOffersInfoFromSingleBoard <- function(page, offersTable, sleep, timeout)
   
   options(stringsAsFactors = FALSE, timeout = timeout)
   
+  alreadyScrapedOfferIds <- offersTable$Id
   offersTable <- createEmptyTable(columnNames = names(offersTable))
-  newOfferURLs <- filterNewOfferURLs(page = page, offersTable = offersTable, timeout = timeout)
+  newOfferURLs <- filterNewOfferURLs(page = page, alreadyScrapedIds = alreadyScrapedOfferIds, timeout = timeout)
   
   for(url in newOfferURLs)
   {

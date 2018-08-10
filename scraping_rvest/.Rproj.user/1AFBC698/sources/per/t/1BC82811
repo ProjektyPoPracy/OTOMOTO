@@ -5,14 +5,14 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "3604503916",
     "id" : "1BC82811",
-    "lastKnownWriteTime" : 1533473768,
-    "last_content_update" : 1533473768682,
+    "lastKnownWriteTime" : 1533920614,
+    "last_content_update" : 1533920614743,
     "path" : "~/Documents/projects/otomoto/scraping_rvest/main_script.R",
     "project_path" : "main_script.R",
     "properties" : {
-        "cursorPosition" : "22,0",
+        "cursorPosition" : "8,20",
         "scrollLine" : "0",
         "tempName" : "Untitled1"
     },

@@ -1,8 +1,7 @@
 
 
-checkIfUniqueOffer <- function(newIds = offerIds, alreadyScrapedIds = df$Id)
+checkIfUniqueOffer <- function(newIds = offerIds, alreadyScrapedIds)
 {
-  
   ifUniqueId <- !(newIds %in% alreadyScrapedIds)
   return(ifUniqueId)
   

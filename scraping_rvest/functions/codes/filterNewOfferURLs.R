@@ -1,5 +1,5 @@
 
-filterNewOfferURLs <- function(page, offersTable, timeout)
+filterNewOfferURLs <- function(page, alreadyScrapedIds, timeout)
 {
   options(timeout = timeout)
   
@@ -7,7 +7,7 @@ filterNewOfferURLs <- function(page, offersTable, timeout)
   offerIds <- getOfferIdsFromBoard(tags=offersTags)
   offerURLs <- getOfferURLsFromBoard(tags=offersTags)
   
-  ifUniqueOffer <- checkIfUniqueOffer(newIds = offerIds, alreadyScrapedIds = offersTable$Id)
+  ifUniqueOffer <- checkIfUniqueOffer(newIds = offerIds, alreadyScrapedIds = alreadyScrapedIds)
   newOfferURLs <- offerURLs[ifUniqueOffer]
   
   return(newOfferURLs)
