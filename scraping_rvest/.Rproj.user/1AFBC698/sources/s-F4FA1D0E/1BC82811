@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1533315230087.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "1BC82811",
+    "lastKnownWriteTime" : 1533920614,
+    "last_content_update" : 1533920614743,
+    "path" : "~/Documents/projects/otomoto/scraping_rvest/main_script.R",
+    "project_path" : "main_script.R",
+    "properties" : {
+        "cursorPosition" : "8,20",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
