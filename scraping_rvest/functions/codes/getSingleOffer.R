@@ -17,6 +17,7 @@ getSingleOffer <- function(URL, sleep = 10L, timeout)
   offerParameterValues <- getOfferParamValues(paramElement = offerParametersTable, timeout = timeout)
   offerEquipment <-       getOfferEquipmentLabels(page = offerPage, timeout = timeout)
   offerDescription <-     getOfferDescription(page = offerPage, timeout = timeout)
+  offerReadingTime <-     as.character( Sys.time() )
   
   ifAllValuesAreCorrect <- checkCorrectnessOfOfferValues(offerId = offerId,
                                 offerPrice = offerPrice,
@@ -37,7 +38,8 @@ getSingleOffer <- function(URL, sleep = 10L, timeout)
                                              paramLabels = offerParameterLabels, 
                                              paramValues = offerParameterValues, 
                                              equipmentLabels = offerEquipment, 
-                                             description = offerDescription)
+                                             description = offerDescription,
+                                             readingTime = offerReadingTime)
   }
   
   Sys.sleep(sleep)
