@@ -9,7 +9,8 @@ checkCorrectnessOfOfferValues <-
     paramLabels,
     paramValues,
     equipmentLabels,
-    description
+    description,
+    photos
   )
   {
     ifCorrectOfferId <- checkCorrectnessOfOfferId(offerId = offerId)
@@ -19,6 +20,7 @@ checkCorrectnessOfOfferValues <-
     ifCorrectParamLabelsAndValues <- checkCorrectnessOfParamLabelsAndValues(labels = paramLabels, values = paramValues)
     ifCorrectEquipmentLabels <- checkCorrectnessOfEquipmentLabels(equipment = equipmentLabels)
     ifCorrectDescription <- checkCorrectnessOfDescription(description = description)
+    ifCorrectPhotos <- checkCorrectnessOfPhotos(photos = photos)
     
     howManyCorrectValues <- eval(parse(text = paste0("sum(", paste0(ls(envir = environment(), pattern = "^ifCorrect"), collapse = ","), ")")))
     maxNumberOfCorrectValues <- length(ls(envir = environment(), pattern = "^ifCorrect"))

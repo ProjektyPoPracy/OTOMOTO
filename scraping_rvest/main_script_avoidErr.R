@@ -25,12 +25,12 @@ for(f in funList)
 
 getOffersInfo_avoidErr(
   offer.type = "u", ## Possible values: "a" - all; "n" - new; "u" - used
-  startPageNr = 1, ## Page number to start; default 1
-  stopPageNr = 10, ## Page number to stop; default 10; if NULL then running function to last page
-  init.df = NULL, ## "offers" ## Declare data frame name you have if you want add info about new offers to it
+  startPageNr = 4, ## Page number to start; default 1
+  stopPageNr = 5, ## Page number to stop; default 10; if NULL then running function to last page
+  init.df = "offers", ## "offers" ## Declare input data frame name you have if you want to add row to it
   output.name = "offers", ## An output data frame name. Function create date frame with that name; default "offers"
-  sleep = 10, ## Forced break between scraping next offer pages; default 10; do not overload the website with your activity
-  timeout = 4000000, ## Time required to interrupt the connection. Too low value should cause errors.
+  sleep = 5, ## Forced break between scraping next offer pages; default 10; do not overload the website with your activity
+  timeout = 4000000, ## Time required to interrupt the connection. Too low value should cause errors. Not working :(
   n_iter = 5 ## How many times the function has to be restarted untill will be terminated
 )
 
