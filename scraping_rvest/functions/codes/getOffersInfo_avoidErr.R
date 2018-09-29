@@ -1,7 +1,7 @@
 
 
 
-getOffersInfo_avoidErr <- function(offer.type = "a", startPageNr = 1, stopPageNr = 10, init.df = NULL, output.name = "offers", sleep = 10, timeout = 4000000, n_iter = 100)
+getOffersInfo_avoidErr <- function(offer.type = "a", startPageNr = 1, stopPageNr = 10, init.df = NULL, output.name = "offers", sleep = 10, timeout = 4000000, n_iter = 100, autosave = TRUE)
 {
   
   ## Assign values for first loop requirement
@@ -23,7 +23,8 @@ getOffersInfo_avoidErr <- function(offer.type = "a", startPageNr = 1, stopPageNr
           init.df = ifelse2(globalenv()$metaData$pageNumber > startPageNr, output.name, init.df), ## Declare data frame you have if you want add info about new offers to it
           output.name = output.name, ## An output data frame name. Function create date frame with that name; default "offers"
           sleep = sleep, ## Forced break between scraping next offer pages; default 10; do not overload the website with your activity
-          timeout = timeout ## Time required to interrupt the connection. Too low value should cause errors.
+          timeout = timeout, ## Time required to interrupt the connection. Too low value should cause errors.
+          autosave = autosave
         )
     },
     error = function(e)

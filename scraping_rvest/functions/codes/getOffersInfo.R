@@ -4,10 +4,10 @@
 ### "n" - new (https://www.otomoto.pl/osobowe/uzywane/) ;
 ### "u" - used (https://www.otomoto.pl/osobowe/nowe/)
 
-getOffersInfo <- function(offer.type = "a", startPageNr = 1, stopPageNr = 10, init.df = NULL, output.name = "offers", sleep = 10, timeout = 4000000)
+getOffersInfo <- function(offer.type = "a", startPageNr = 1, stopPageNr = 10, init.df = NULL, output.name = "offers", sleep = 10, timeout = 4000000, autosave)
 {
   
-  loadPackages(pckgs = c("tidyverse", "xml2"))
+  loadPackages(pckgs = c("rvest", "xml2"))
   options(stringsAsFactors = FALSE, timeout = timeout)
   
   offersInfoOutput <- defineInitialDataFrameWithOfferInfo(initDF = init.df)
@@ -37,12 +37,15 @@ getOffersInfo <- function(offer.type = "a", startPageNr = 1, stopPageNr = 10, in
     newOffers <- getOffersInfoFromSingleBoard(page = boardPage, offersTable = offersInfoOutput, sleep = sleep, timeout = timeout) 
     offersInfoOutput <- rbind(offersInfoOutput, newOffers)
     assign(x = output.name, value = offersInfoOutput, envir = globalenv())
+    saveAutomatically(x = offersInfoOutput, if_autosave = autosave)
   }
   ## ----------------------------------------------------------
   
   checkingIfTerminateFunction(currentPageNr = pageNumber, lastPageNr = numberOfPagesToScraping)
   
-  return(message("Done"))
+  save(offersInfoOutput, file = "./data/scraped_offers.RData")
+  
+  return(message("Done. Data has been saved in ./data/scraped_offers.RData"))
   
 }
 

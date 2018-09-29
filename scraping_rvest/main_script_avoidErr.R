@@ -25,13 +25,14 @@ for(f in funList)
 
 getOffersInfo_avoidErr(
   offer.type = "u", ## Possible values: "a" - all; "n" - new; "u" - used
-  startPageNr = 4, ## Page number to start; default 1
-  stopPageNr = 5, ## Page number to stop; default 10; if NULL then running function to last page
-  init.df = "offers", ## "offers" ## Declare input data frame name you have if you want to add row to it
+  startPageNr = 2, ## Page number to start; default 1
+  stopPageNr = 6, ## Page number to stop; default 10; if NULL then running function to last page
+  init.df = NULL, ## "offers" ## Declare input data frame name you have if you want to add row to it, NULL - no initial data frame
   output.name = "offers", ## An output data frame name. Function create date frame with that name; default "offers"
   sleep = 5, ## Forced break between scraping next offer pages; default 10; do not overload the website with your activity
   timeout = 4000000, ## Time required to interrupt the connection. Too low value should cause errors. Not working :(
-  n_iter = 5 ## How many times the function has to be restarted untill will be terminated
+  n_iter = 5, ## How many times the function has to be restarted untill will be terminated
+  autosave = TRUE ## whether save data frame with already download offers to file. Saving is running after finish scraping all offers from single board. Data is saved in "autosave" directory
 )
 
 nrow(offers)
