@@ -13,11 +13,11 @@ defineURLcore <- function(offerType)
   }
   else if(offerType=="n")
   {
-    url <- "https://www.otomoto.pl/osobowe/uzywane/"
+    url <- "https://www.otomoto.pl/osobowe/nowe/"
   }
   else if(offerType=="u")
   {
-    url <- "https://www.otomoto.pl/osobowe/nowe/"
+    url <- "https://www.otomoto.pl/osobowe/uzywane/"
   }
   else
   {
