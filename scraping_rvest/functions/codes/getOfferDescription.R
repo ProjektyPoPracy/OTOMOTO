@@ -13,5 +13,7 @@ getOfferDescription <- function(page, timeout)
     gsub(pattern = "\\s{2,}$", replacement = "", x = .) %>%
     gsub(pattern = "\\s{2,}", replacement = " ", x = .)
   
+  description <- description[[1]]
+  
   return(description)
 }
