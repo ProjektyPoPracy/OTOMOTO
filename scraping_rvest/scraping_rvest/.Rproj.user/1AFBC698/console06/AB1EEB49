@@ -1,0 +1,308 @@
+]0;seb@seb-kom:~/Documents/projects/otomoto/scraping_rvest]7;file://seb-kom/home/seb/Documents/projects/otomoto/scraping_rvest]0;seb@seb-kom ~/Documents/projects/otomoto/scraping_rvest[01;32mseb@seb-kom[00m [01;34m~/Documents/projects/otomoto/scraping_rvest $[00m git init
+Initialized empty Git repository in /home/seb/Documents/projects/otomoto/scraping_rvest/.git/
+]0;seb@seb-kom:~/Documents/projects/otomoto/scraping_rvest]7;file://seb-kom/home/seb/Documents/projects/otomoto/scraping_rvest]0;seb@seb-kom ~/Documents/projects/otomoto/scraping_rvest[01;32mseb@seb-kom[00m [01;34m~/Documents/projects/otomoto/scraping_rvest $[00m git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.Rhistory[m
+	[31m.Rproj.user/[m
+	[31mfunctions/[m
+	[31mnotes.R[m
+	[31mscraping_rvest.Rproj[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+]0;seb@seb-kom:~/Documents/projects/otomoto/scraping_rvest]7;file://seb-kom/home/seb/Documents/projects/otomoto/scraping_rvest]0;seb@seb-kom ~/Documents/projects/otomoto/scraping_rvest[01;32mseb@seb-kom[00m [01;34m~/Documents/projects/otomoto/scraping_rvest $[00m [K]0;seb@seb-kom ~/Documents/projects/otomoto/scraping_rvest[01;32mseb@seb-kom[00m [01;34m~/Documents/projects/otomoto/scraping_rvest $[00m git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.Rproj.user/[m
+	[31mfunctions/[m
+	[31mnotes.R[m
+	[31mscraping_rvest.Rproj[m
+	[31mtests.R[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+]0;seb@seb-kom:~/Documents/projects/otomoto/scraping_rvest]7;file://seb-kom/home/seb/Documents/projects/otomoto/scraping_rvest]0;seb@seb-kom ~/Documents/projects/otomoto/scraping_rvest[01;32mseb@seb-kom[00m [01;34m~/Documents/projects/otomoto/scraping_rvest $[00m git add .
+]0;seb@seb-kom:~/Documents/projects/otomoto/scraping_rvest]7;file://seb-kom/home/seb/Documents/projects/otomoto/scraping_rvest]0;seb@seb-kom ~/Documents/projects/otomoto/scraping_rvest[01;32mseb@seb-kom[00m [01;34m~/Documents/projects/otomoto/scraping_rvest $[00m git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	[32mnew file:   .Rproj.user/1AFBC698/console06/AB1EEB49[m
+	[32mnew file:   .Rproj.user/1AFBC698/console06/AB1EEB49.env[m
+	[32mnew file:   .Rproj.user/1AFBC698/console06/INDEX001[m
+	[32mnew file:   .Rproj.user/1AFBC698/pcs/files-pane.pper[m
+	[32mnew file:   .Rproj.user/1AFBC698/pcs/source-pane.pper[m
+	[32mnew file:   .Rproj.user/1AFBC698/pcs/windowlayoutstate.pper[m
+	[32mnew file:   .Rproj.user/1AFBC698/pcs/workbench-pane.pper[m
+	[32mnew file:   .Rproj.user/1AFBC698/rmd-outputs[m
+	[32mnew file:   .Rproj.user/1AFBC698/saved_source_markers[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/prop/17892EB0[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/prop/1D446A1B[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/prop/24286287[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/prop/269D844F[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/prop/295F83DC[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/prop/2B06B61F[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/prop/3EFE8F45[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/prop/405C2FC9[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/prop/437038D6[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/prop/451B66A3[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/prop/6175DA48[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/prop/637E720C[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/prop/63847345[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/prop/69753E1A[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/prop/72DDD495[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/prop/74A9F5EF[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/prop/7BB4E8D3[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/prop/870A942B[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/prop/8A16FB34[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/prop/92DF86DE[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/prop/93452CB[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/prop/A04E9014[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/prop/A19D7986[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/prop/A37CA0A7[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/prop/BC0E2CBF[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/prop/C34B1CFC[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/prop/C5FCD66B[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/prop/C60103C9[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/prop/CFC8867[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/prop/DE717AB1[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/prop/E0DA5842[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/prop/F4EA3985[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/prop/FE1E645A[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/prop/INDEX[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/10E74C50-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/19B5E040[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/19B5E040-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/1A775655-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/287DB207-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/2890E978-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/29DE07AA-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/2EE21D8C-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/35E5CEA2-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/36A25960-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/3CB0313-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/3FBD2D43[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/3FBD2D43-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/41A38580-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/4A2A1C9F-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/54AC26CD-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/574645C3-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/58AB009D-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/5C1823B2-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/68B54695-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/6C2C1CF0-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/743EA94E-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/773EAE0D-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/77EE6B40-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/7E333283-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/7E7BD1DC-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/98C074E1-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/9C2F94F[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/9C2F94F-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/9E1946BC-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/9E71D71D[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/9E71D71D-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/A534469E-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/AF135A2E[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/AF135A2E-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/B1A4F9C9-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/BB7CE9CA[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/BB7CE9CA-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/C05472F5-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/C066FA8E[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/C066FA8E-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/C10DA904-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/C8160FC4-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/CAFEA116[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/CAFEA116-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/E1EC01FC-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/E416E05C-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/E7917447-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/EA812AFC-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/F81ACC72-contents[m
+	[32mnew file:   .Rproj.user/1AFBC698/sources/s-5A5CD560/lock_file[m
+	[32mnew file:   .Rproj.user/shared/notebooks/patch-chunk-names[m
+	[32mnew file:   .Rproj.user/shared/notebooks/paths[m
+	[32mnew file:   functions/codes/checkCorrectnessOfDealerLocation.R[m
+	[32mnew file:   functions/codes/checkCorrectnessOfDealerType.R[m
+	[32mnew file:   functions/codes/checkCorrectnessOfDescription.R[m
+	[32mnew file:   functions/codes/checkCorrectnessOfEquipmentLabels.R[m
+	[32mnew file:   functions/codes/checkCorrectnessOfOfferId.R[m
+	[32mnew file:   functions/codes/checkCorrectnessOfOfferPrice.R[m
+	[32mnew file:   functions/codes/checkCorrectnessOfOfferValues.R[m
+	[32mnew file:   functions/codes/checkCorrectnessOfParamLabelsAndValues.R[m
+	[32mnew file:   functions/codes/getDealerLoacation.R[m
+	[32mnew file:   functions/codes/getDealerType.R[m
+	[32mnew file:   functions/codes/getNextPageURL.R[m
+	[32mnew file:   functions/codes/getNumberOfPages.R[m
+	[32mnew file:   functions/codes/getOfferDescription.R[m
+	[32mnew file:   functions/codes/getOfferEquipmentLabels.R[m
+	[32mnew file:   functions/codes/getOfferId.R[m
+	[32mnew file:   functions/codes/getOfferParamLabels.R[m
+	[32mnew file:   functions/codes/getOfferParamTable.R[m
+	[32mnew file:   functions/codes/getOfferParamValues.R[m
+	[32mnew file:   functions/codes/getOfferPrice.R[m
+	[32mnew file:   functions/codes/getOfferURLs.R[m
+	[32mnew file:   functions/codes/getSingleOffer.R[m
+	[32mnew file:   functions/codes/goToPage.R[m
+	[32mnew file:   functions/codes/loadPackages.R[m
+	[32mnew file:   functions/codes/mergeOfferValues.R[m
+	[32mnew file:   functions/codes/transformMonthName.R[m
+	[32mnew file:   functions/codes/transformOfferDate.R[m
+	[32mnew file:   notes.R[m
+	[32mnew file:   scraping_rvest.Rproj[m
+	[32mnew file:   tests.R[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/1AFBC698/console06/AB1EEB49[m
+
+]0;seb@seb-kom:~/Documents/projects/otomoto/scraping_rvest]7;file://seb-kom/home/seb/Documents/projects/otomoto/scraping_rvest]0;seb@seb-kom ~/Documents/projects/otomoto/scraping_rvest[01;32mseb@seb-kom[00m [01;34m~/Documents/projects/otomoto/scraping_rvest $[00m git -[Kcommit -m "Add function to scraping single offer"[1@d[1P[1@s[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[master (root-commit) d8aa7ac] Add functions to scraping single offer
+ 125 files changed, 2001 insertions(+)
+ create mode 100644 .Rproj.user/1AFBC698/console06/AB1EEB49
+ create mode 100644 .Rproj.user/1AFBC698/console06/AB1EEB49.env
+ create mode 100644 .Rproj.user/1AFBC698/console06/INDEX001
+ create mode 100644 .Rproj.user/1AFBC698/pcs/files-pane.pper
+ create mode 100644 .Rproj.user/1AFBC698/pcs/source-pane.pper
+ create mode 100644 .Rproj.user/1AFBC698/pcs/windowlayoutstate.pper
+ create mode 100644 .Rproj.user/1AFBC698/pcs/workbench-pane.pper
+ create mode 100644 .Rproj.user/1AFBC698/rmd-outputs
+ create mode 100644 .Rproj.user/1AFBC698/saved_source_markers
+ create mode 100644 .Rproj.user/1AFBC698/sources/prop/17892EB0
+ create mode 100644 .Rproj.user/1AFBC698/sources/prop/1D446A1B
+ create mode 100644 .Rproj.user/1AFBC698/sources/prop/24286287
+ create mode 100644 .Rproj.user/1AFBC698/sources/prop/269D844F
+ create mode 100644 .Rproj.user/1AFBC698/sources/prop/295F83DC
+ create mode 100644 .Rproj.user/1AFBC698/sources/prop/2B06B61F
+ create mode 100644 .Rproj.user/1AFBC698/sources/prop/3EFE8F45
+ create mode 100644 .Rproj.user/1AFBC698/sources/prop/405C2FC9
+ create mode 100644 .Rproj.user/1AFBC698/sources/prop/437038D6
+ create mode 100644 .Rproj.user/1AFBC698/sources/prop/451B66A3
+ create mode 100644 .Rproj.user/1AFBC698/sources/prop/6175DA48
+ create mode 100644 .Rproj.user/1AFBC698/sources/prop/637E720C
+ create mode 100644 .Rproj.user/1AFBC698/sources/prop/63847345
+ create mode 100644 .Rproj.user/1AFBC698/sources/prop/69753E1A
+ create mode 100644 .Rproj.user/1AFBC698/sources/prop/72DDD495
+ create mode 100644 .Rproj.user/1AFBC698/sources/prop/74A9F5EF
+ create mode 100644 .Rproj.user/1AFBC698/sources/prop/7BB4E8D3
+ create mode 100644 .Rproj.user/1AFBC698/sources/prop/870A942B
+ create mode 100644 .Rproj.user/1AFBC698/sources/prop/8A16FB34
+ create mode 100644 .Rproj.user/1AFBC698/sources/prop/92DF86DE
+ create mode 100644 .Rproj.user/1AFBC698/sources/prop/93452CB
+ create mode 100644 .Rproj.user/1AFBC698/sources/prop/A04E9014
+ create mode 100644 .Rproj.user/1AFBC698/sources/prop/A19D7986
+ create mode 100644 .Rproj.user/1AFBC698/sources/prop/A37CA0A7
+ create mode 100644 .Rproj.user/1AFBC698/sources/prop/BC0E2CBF
+ create mode 100644 .Rproj.user/1AFBC698/sources/prop/C34B1CFC
+ create mode 100644 .Rproj.user/1AFBC698/sources/prop/C5FCD66B
+ create mode 100644 .Rproj.user/1AFBC698/sources/prop/C60103C9
+ create mode 100644 .Rproj.user/1AFBC698/sources/prop/CFC8867
+ create mode 100644 .Rproj.user/1AFBC698/sources/prop/DE717AB1
+ create mode 100644 .Rproj.user/1AFBC698/sources/prop/E0DA5842
+ create mode 100644 .Rproj.user/1AFBC698/sources/prop/F4EA3985
+ create mode 100644 .Rproj.user/1AFBC698/sources/prop/FE1E645A
+ create mode 100644 .Rproj.user/1AFBC698/sources/prop/INDEX
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/10E74C50-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/19B5E040
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/19B5E040-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/1A775655-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/287DB207-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/2890E978-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/29DE07AA-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/2EE21D8C-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/35E5CEA2-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/36A25960-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/3CB0313-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/3FBD2D43
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/3FBD2D43-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/41A38580-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/4A2A1C9F-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/54AC26CD-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/574645C3-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/58AB009D-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/5C1823B2-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/68B54695-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/6C2C1CF0-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/743EA94E-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/773EAE0D-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/77EE6B40-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/7E333283-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/7E7BD1DC-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/98C074E1-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/9C2F94F
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/9C2F94F-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/9E1946BC-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/9E71D71D
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/9E71D71D-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/A534469E-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/AF135A2E
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/AF135A2E-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/B1A4F9C9-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/BB7CE9CA
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/BB7CE9CA-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/C05472F5-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/C066FA8E
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/C066FA8E-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/C10DA904-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/C8160FC4-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/CAFEA116
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/CAFEA116-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/E1EC01FC-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/E416E05C-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/E7917447-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/EA812AFC-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/F81ACC72-contents
+ create mode 100644 .Rproj.user/1AFBC698/sources/s-5A5CD560/lock_file
+ create mode 100644 .Rproj.user/shared/notebooks/patch-chunk-names
+ create mode 100644 .Rproj.user/shared/notebooks/paths
+ create mode 100644 functions/codes/checkCorrectnessOfDealerLocation.R
+ create mode 100644 functions/codes/checkCorrectnessOfDealerType.R
+ create mode 100644 functions/codes/checkCorrectnessOfDescription.R
+ create mode 100644 functions/codes/checkCorrectnessOfEquipmentLabels.R
+ create mode 100644 functions/codes/checkCorrectnessOfOfferId.R
+ create mode 100644 functions/codes/checkCorrectnessOfOfferPrice.R
+ create mode 100644 functions/codes/checkCorrectnessOfOfferValues.R
+ create mode 100644 functions/codes/checkCorrectnessOfParamLabelsAndValues.R
+ create mode 100644 functions/codes/getDealerLoacation.R
+ create mode 100644 functions/codes/getDealerType.R
+ create mode 100644 functions/codes/getNextPageURL.R
+ create mode 100644 functions/codes/getNumberOfPages.R
+ create mode 100644 functions/codes/getOfferDescription.R
+ create mode 100644 functions/codes/getOfferEquipmentLabels.R
+ create mode 100644 functions/codes/getOfferId.R
+ create mode 100644 functions/codes/getOfferParamLabels.R
+ create mode 100644 functions/codes/getOfferParamTable.R
+ create mode 100644 functions/codes/getOfferParamValues.R
+ create mode 100644 functions/codes/getOfferPrice.R
+ create mode 100644 functions/codes/getOfferURLs.R
+ create mode 100644 functions/codes/getSingleOffer.R
+ create mode 100644 functions/codes/goToPage.R
+ create mode 100644 functions/codes/loadPackages.R
+ create mode 100644 functions/codes/mergeOfferValues.R
+ create mode 100644 functions/codes/transformMonthName.R
+ create mode 100644 functions/codes/transformOfferDate.R
+ create mode 100644 notes.R
+ create mode 100644 scraping_rvest.Rproj
+ create mode 100644 tests.R
+]0;seb@seb-kom:~/Documents/projects/otomoto/scraping_rvest]7;file://seb-kom/home/seb/Documents/projects/otomoto/scraping_rvest]0;seb@seb-kom ~/Documents/projects/otomoto/scraping_rvest[01;32mseb@seb-kom[00m [01;34m~/Documents/projects/otomoto/scraping_rvest $[00m git log
+[?1h=[33mcommit d8aa7ac1f3765ec9a6afa5e9339c0092fdcea7d6[m[m
+Author: SebastianKuzara <skuzara358@gmail.com>[m
+Date:   Sat Jul 28 17:56:00 2018 +0200[m
+[m
+    Add functions to scraping single offer[m
+[K[?1l>]0;seb@seb-kom:~/Documents/projects/otomoto/scraping_rvest]7;file://seb-kom/home/seb/Documents/projects/otomoto/scraping_rvest]0;seb@seb-kom ~/Documents/projects/otomoto/scraping_rvest[01;32mseb@seb-kom[00m [01;34m~/Documents/projects/otomoto/scraping_rvest $[00m 
